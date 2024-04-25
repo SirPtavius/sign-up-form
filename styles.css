@@ -2,6 +2,7 @@ body {
   display: flex;
   height: 100vh;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .imageContainer {
   display: flex;
@@ -40,4 +41,32 @@ body {
   font-weight: 600;
   margin: 0 0 0 20px;
   scale: 1 1.15;
+}
+.signUpForm{
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 0 0 40px 0;
+}
+.formRow{  
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.row{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+input{
+  border-radius: 3px;
+  border: 2px solid #D6D9DC;
+}
+button{
+  border-radius: 10px;
+  width: 150px;
+  height: 50px;
+  border: #D6D9DC 2px solid;
 }
