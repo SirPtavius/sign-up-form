@@ -1,10 +1,23 @@
+.sedan-regular {
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sedan-regular-italic {
+  font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 body {
   display: flex;
   height: 100vh;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Sedan", serif;
 }
 .imageContainer {
+  flex:1;
   display: flex;
   flex-direction: column;
   vertical-align: bottom;
@@ -12,7 +25,7 @@ body {
   min-height: 100vh;
   min-width: 20vw;
   width: 42vw;
-  background-image: url(image/pillars_of_creation\ \(1\).webp);
+  background-image: url(image/teemu-paananen-OOE4xAnBhKo-unsplash.jpg);  
   background-size: cover;
   background-position: 70%;
   
@@ -25,15 +38,19 @@ body {
 .logoSection{
   align-items: center;
   display: flex;
-  opacity: 0.75;
-  justify-content: left;
+  justify-content: center;
   margin-top: 100px;
   background-color: rgba(0, 0, 0, 0.4);
-  box-shadow: -5px 0px 10px 2px rgba(0, 0, 0, 0.4);
-  padding: 15px 0px;
+  padding: 15px;
+}
+.logoSection p{
+  opacity: 0.65;;
 }
 .logo{
-  width: 150px;
+  width: 250px;
+  height: 150px;
+  position: absolute;
+  
 }
 .logoSection p{ 
   color: white;
@@ -43,6 +60,7 @@ body {
   scale: 1 1.15;
 }
 .signUpForm{
+  
   background-color: #F6F7F8;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
@@ -71,7 +89,7 @@ button{
   height: 50px;
   border: #D6D9DC 2px solid;
   color: white;
-  background-color: darkslateblue;
+  background-color: #067307;
   font-weight: 600;
   transition: transform 0.2s ease;
 }
@@ -83,4 +101,10 @@ button:active {
 }
 label{
   font-weight: 600;
+}
+input:invalid {
+  border-color: red;
+}
+.information{
+  width: 600px;
 }
