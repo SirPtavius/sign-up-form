@@ -1,12 +1,72 @@
-.sedan-regular {
-  font-family: "Sedan", serif;
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.sedan-regular-italic {
-  font-family: "Sedan", serif;
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   font-style: italic;
 }
 
@@ -14,25 +74,23 @@ body {
   display: flex;
   height: 100vh;
   margin: 0;
-  font-family: "Sedan", serif;
+  font-family: "Roboto", sans-serif;
 }
 .imageContainer {
   flex:1;
   display: flex;
   flex-direction: column;
   vertical-align: bottom;
-  object-fit: cover;
+  object-fit: cover; /*maybe can remove*/
   min-height: 100vh;
   min-width: 20vw;
-  width: 42vw;
   background-image: url(image/teemu-paananen-OOE4xAnBhKo-unsplash.jpg);  
   background-size: cover;
-  background-position: 70%;
-  
 }
+
 .formContainer {
   flex: 2;
-  padding: 20px;
+  padding: 40px;
   align-self: center;
 }
 .logoSection{
@@ -57,14 +115,12 @@ body {
   font-size: 4.4rem;
   font-weight: 600;
   margin: 0 0 0 20px;
-  scale: 1 1.15;
+  scale: 1 1.15; /*check*/
 }
-.signUpForm{
-  
+.signUpForm{ 
   background-color: #F6F7F8;
-  border: 1px solid #D6D9DC;
-  border-radius: 3px;
-  padding: 20px;
+  
+  
   margin: 0 0 40px 0;
 }
 .formRow{  
@@ -73,15 +129,18 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.row{
+.rightRow, .leftRow{
   display: flex;
   flex-direction: column;
-  padding: 5px;
+}
+.rightRow{
+  margin-left: 100px;
 }
 input{
-  border-radius: 3px;
-  border: 2px solid #D6D9DC;
-  height: 18px;
+  border-radius: 4px;
+  border: 1px solid #D6D9DC;
+  height: 25px;
+  width: 250px;
 }
 button{
   border-radius: 10px;
@@ -100,11 +159,21 @@ button:active {
   transform: scale(0.96);
 }
 label{
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 20px;
 }
+
 input:invalid {
-  border-color: red;
+  border-color: rgba(255, 0, 0, 0.596);
+}
+input:focus{
+  border-color: rgba(5, 77, 233, 0.945) ;
+  outline: none;
 }
 .information{
   width: 600px;
+}
+h2{
+  font-size: 25px;
+  margin-bottom: 30px;
 }
