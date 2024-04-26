@@ -1,3 +1,4 @@
+
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -77,6 +78,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .imageContainer {
+  position: relative;
   flex:1;
   display: flex;
   flex-direction: column;
@@ -89,7 +91,7 @@ body {
 }
 
 .formContainer {
-  flex: 2;
+  flex: 1.5; /*2*/
   padding: 40px;
   align-self: center;
 }
@@ -117,12 +119,7 @@ body {
   margin: 0 0 0 20px;
   scale: 1 1.15; /*check*/
 }
-.signUpForm{ 
-  background-color: #F6F7F8;
-  
-  
-  margin: 0 0 40px 0;
-}
+
 .formRow{  
   margin-bottom: 20px;
   display: flex;
@@ -141,16 +138,18 @@ input{
   border: 1px solid #D6D9DC;
   height: 25px;
   width: 250px;
+  font-size: 16px;
 }
 button{
   border-radius: 10px;
-  width: 150px;
+  width: 200px;
   height: 50px;
   border: #D6D9DC 2px solid;
   color: white;
   background-color: #067307;
   font-weight: 600;
   transition: transform 0.2s ease;
+  
 }
 button:hover{
   transform: scale(1.05);
@@ -160,14 +159,11 @@ button:active {
 }
 label{
   font-weight: 500;
-  font-size: 20px;
-}
-
-input:invalid {
-  border-color: rgba(255, 0, 0, 0.596);
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 input:focus{
-  border-color: rgba(5, 77, 233, 0.945) ;
+  border-color: #067307 ;
   outline: none;
 }
 .information{
@@ -176,4 +172,29 @@ input:focus{
 h2{
   font-size: 25px;
   margin-bottom: 30px;
+}
+.login{
+  font-weight: bold; 
+  color: #067307;
+}
+span{
+  margin-top: 5px;
+}
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+.credit{
+color: white;
+font-size: 15px;
+
+}
+.authorCredit {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  text-align: center;
 }
