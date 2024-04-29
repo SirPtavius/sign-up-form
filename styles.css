@@ -8,21 +8,33 @@ body {
   display: flex;
   height: 100vh;
   margin: 0;
+
   font-family: "Montserrat", sans-serif;
   color: white;
+  background-image: url(image/stars-1845140_1920\ .jpg);
+  /*
   background-image: url(image/astronaut-4106766_1280.jpg);
   background-size: 300%;
+  background-position: 5%;
+  /*
+  FULL RED BACKGROUND
+  background-position-x: -10%;
+  background-position-y: 45%;
+  */
 }
 
 button {
-  border-radius: 10px;
+  border-radius: 12px;
   width: 200px;
   height: 50px;
-  border: #d6d9dc 2px solid;
+  border: #d6d9dc 1px solid;
   color: white;
-  background-color: #f28f16;
-  font-weight: 600;
+  background-color: transparent;
+  font-weight: 00;
+  font-size: 16px;
   transition: transform 0.2s ease;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 button:hover {
   transform: scale(1.05);
@@ -35,7 +47,6 @@ button:active {
   flex: 1;
   display: flex;
   flex-direction: column;
-  vertical-align: bottom;
   min-height: 100vh;
   min-width: 20vw;
   background-image: url(image/astronaut-4106766_1280.jpg);
@@ -43,16 +54,21 @@ button:active {
 }
 
 .formContainer {
+  flex: 1.5;
+  align-self: center;
+  max-height: 100vh;
+}
+.formBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1.5; /*2*/
-  padding: 40px;
-  align-self: center;
-  border-radius: 60px; /*remove TEST*/
+  border-radius: 60px;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(4px);
+  margin: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .logoSection {
@@ -76,7 +92,7 @@ button:active {
   font-size: 4.4rem;
   font-weight: 600;
   margin: 0 0 0 20px;
-  scale: 1 1.15; /*check*/
+  scale: 1 1.1;
 }
 
 .formRow {
@@ -94,11 +110,13 @@ button:active {
   margin-left: 100px;
 }
 input {
-  border-radius: 4px;
-  border: 1px solid #d6d9dc;
-  height: 25px;
+  border-radius: 12px;
+  border: 2px solid #d6d9dc;
+  height: 28px;
   width: 250px;
   font-size: 16px;
+  opacity: 0.3;
+  font-weight: 600;
 }
 
 label {
@@ -107,7 +125,8 @@ label {
   margin-bottom: 5px;
 }
 input:focus {
-  border-color: #067307;
+  opacity: 0.6;
+  border-color: #f28f16;
   outline: none;
 }
 .information {
