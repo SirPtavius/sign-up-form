@@ -4,79 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Sign Up</title>
-  </head> 
-  <body>
 
-    <div class="imageContainer" >
-      
-      <div class="logoSection" >
-        <p>SM &nbsp;</p>
-          <img src="image/Default_Generate_an_image_of_a_raccoon_smoking_weed_portraying_1_4811fa3b-1e69-452d-be74-13efe8d0dffb_0.png" alt="Logo" class="logo">
-        <p>KE</p>    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="imageContainer">
+      <div class="logoSection">
+        <p>ASTR &nbsp;</p>
+        <img
+          src="image/ai-generated-8627424_1280-removebg-preview.png"
+          alt="Logo"
+          class="logo"
+        />
+        <p>MOON</p>
       </div>
 
       <div class="authorCredit">
-        <p class="credit">Photo by <a class="credit" href="https://unsplash.com/@xteemu">Teemu Paananen</a> on <a class="credit" href="https://unsplash.com">Unsplash</a></p>
+        <p class="credit">
+          Photo by
+          <a
+            class="credit"
+            href="https://pixabay.com/users/pizar_heryanto-12044322/"
+            >pizar_heryanto</a
+          >
+          on <a class="credit" href="https://pixabay.com">pixabay</a>
+        </p>
       </div>
-
     </div>
 
     <div class="formContainer">
       <div class="information">
-        <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.</h2>   
+        <h2>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. <br />
+          Sign up <em>now</em> to get started.
+        </h2>
       </div>
 
       <h2>You <em>know</em> you want to.</h2>
-      <h2>Let's do this!</h2>
 
       <form action="" method="get" class="signUpForm">
-
+        <h2>Let's do this!</h2>
         <div class="formRow">
           <div class="leftRow">
-           <label for="first-name">First Name</label>
-           <input id="first-name" name="first-name" type="text" />
+            <label for="first-name">First Name</label>
+            <input id="first-name" name="first-name" type="text" />
           </div>
           <div class="rightRow">
-           <label for="last-name">Last Name</label>
-           <input id="last-name" name="last-name" type="text" />
+            <label for="last-name">Last Name</label>
+            <input id="last-name" name="last-name" type="text" />
           </div>
         </div>
 
         <div class="formRow">
           <div class="leftRow">
             <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="jow@email.com"/>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="jow@email.com"
+            />
           </div>
           <div class="rightRow">
             <label for="phone"> Phone Number</label>
-           <input type="tel" id="phone" name="phone" placeholder=" 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder=" 123-456-7890"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
           </div>
         </div>
-        
+
         <div class="formRow">
           <div class="leftRow">
             <label for="pass">Password</label>
-            <input type="password" id="pass" name="password" minlength="8" maxlength="20" required/>
+            <input
+              type="password"
+              id="pass"
+              name="password"
+              minlength="8"
+              maxlength="20"
+              required
+            />
             <span id="password_error" class="error-message"></span>
           </div>
           <div class="rightRow">
             <label for="confirm_password">Confirm Password</label>
-           <input type="password" name="confirm_password" id="confirm_password" required/>
+            <input
+              type="password"
+              name="confirm_password"
+              id="confirm_password"
+              required
+            />
           </div>
         </div>
 
         <button type="submit" id="createAccount">Create Account</button>
 
-        <p>Arleady have an account? <a class="login" href="https://www.google.it/?hl=it">Log in</a></p>
-  
+        <p>
+          Arleady have an account?
+          <a class="login" href="https://www.google.it/?hl=it">Log in</a>
+        </p>
       </form>
     </div>
   </body>
   <script src="script.js"></script>
 </html>
-

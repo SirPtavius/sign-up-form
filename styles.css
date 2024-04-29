@@ -1,101 +1,61 @@
-
-.roboto-thin {
-  font-family: "Roboto", sans-serif;
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
 }
-
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.roboto-thin-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.roboto-light-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.roboto-regular-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.roboto-medium-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.roboto-bold-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.roboto-black-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
 body {
   display: flex;
   height: 100vh;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background-image: url(image/astronaut-4106766_1280.jpg);
+  background-size: 300%;
+}
+
+button {
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  border: #d6d9dc 2px solid;
+  color: white;
+  background-color: #f28f16;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+button:hover {
+  transform: scale(1.05);
+}
+button:active {
+  transform: scale(0.96);
 }
 .imageContainer {
   position: relative;
-  flex:1;
+  flex: 1;
   display: flex;
   flex-direction: column;
   vertical-align: bottom;
-  object-fit: cover; /*maybe can remove*/
   min-height: 100vh;
   min-width: 20vw;
-  background-image: url(image/teemu-paananen-OOE4xAnBhKo-unsplash.jpg);  
+  background-image: url(image/astronaut-4106766_1280.jpg);
   background-size: cover;
 }
 
 .formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex: 1.5; /*2*/
   padding: 40px;
   align-self: center;
+  border-radius: 60px; /*remove TEST*/
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
 }
-.logoSection{
+
+.logoSection {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -103,16 +63,15 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 15px;
 }
-.logoSection p{
-  opacity: 0.65;;
+.logoSection p {
+  opacity: 0.65;
 }
-.logo{
-  width: 250px;
+.logo {
+  width: 150px;
   height: 150px;
   position: absolute;
-  
 }
-.logoSection p{ 
+.logoSection p {
   color: white;
   font-size: 4.4rem;
   font-weight: 600;
@@ -120,80 +79,64 @@ body {
   scale: 1 1.15; /*check*/
 }
 
-.formRow{  
+.formRow {
   margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.rightRow, .leftRow{
+.rightRow,
+.leftRow {
   display: flex;
   flex-direction: column;
 }
-.rightRow{
+.rightRow {
   margin-left: 100px;
 }
-input{
+input {
   border-radius: 4px;
-  border: 1px solid #D6D9DC;
+  border: 1px solid #d6d9dc;
   height: 25px;
   width: 250px;
   font-size: 16px;
 }
-button{
-  border-radius: 10px;
-  width: 200px;
-  height: 50px;
-  border: #D6D9DC 2px solid;
-  color: white;
-  background-color: #067307;
-  font-weight: 600;
-  transition: transform 0.2s ease;
-  
-}
-button:hover{
-  transform: scale(1.05);
-}
-button:active {
-  transform: scale(0.96);
-}
-label{
+
+label {
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 5px;
 }
-input:focus{
-  border-color: #067307 ;
+input:focus {
+  border-color: #067307;
   outline: none;
 }
-.information{
+.information {
   width: 600px;
 }
-h2{
+h2 {
   font-size: 25px;
   margin-bottom: 30px;
 }
-.login{
-  font-weight: bold; 
-  color: #067307;
+.login {
+  font-weight: bold;
+  color: #f24141;
 }
-span{
+span {
   margin-top: 5px;
 }
 .error-message {
   color: red;
   font-size: 12px;
 }
-.credit{
-color: white;
-font-size: 15px;
-
+.credit {
+  color: white;
+  font-size: 15px;
 }
 .authorCredit {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
   text-align: center;
