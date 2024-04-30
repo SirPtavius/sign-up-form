@@ -126,7 +126,6 @@ label {
 }
 input:focus {
   opacity: 0.6;
-  border-color: #f28f16;
   outline: none;
 }
 .information {
